@@ -8,14 +8,53 @@ The analysis was performed using **Jupyter Notebook**. To view the complete code
 Now, let's begin.
 
 ## Dataset Information
-**InvoiceNo**: Invoice number, a 6-digit integral number uniquely assigned to each transaction.  
-**StockCode**: Product (item), a 5-digit integral number uniquely assigned to each distinct product.  
-**Description**: Product (item) name.  
-**Quantity**: The quantities of each product (item) per transaction.  
-**InvoiceDate**: Invoice Date and time, the day and time when each transaction was generated.  
-**UnitPrice**: Unit price, Product price per unit in sterling.  
-**CustomerID**: Customer number, a 5-digit integral number uniquely assigned to each customer.  
-**Country**: Country name, the name of the country where each customer resides. 
+
+First, let's take a look to the top 5 rows of the dataset:  
+
+<details> 
+  <summary>Show code</summary>  
+  
+  ```python
+  df.head()
+  ```    
+</details>
+
+<p align="center">
+  <img src="https://github.com/geraldsimanullang/Visualization-and-analysis-of-an-online-retail-invoices-dataset/assets/154493278/ca9d675d-543b-45dc-9966-3e2fed351c92">
+</p>
+
+These are description of the dataset's columns obtained from data source:  
+| Column | Description |
+| --- | --- |
+| **InvoiceNo** | Invoice number, a 6-digit integral number uniquely assigned to each transaction.|
+| **StockCode** | Product (item), a 5-digit integral number uniquely assigned to each distinct product.|
+| **Description** | Product (item) name.|
+| **Quantity** | The quantities of each product (item) per transaction.  |
+| **InvoiceDate** | Invoice Date and time, the day and time when each transaction was generated.|
+| **UnitPrice** | Unit price, Product price per unit in sterling.|
+| **CustomerID** | Customer number, a 5-digit integral number uniquely assigned to each customer.|
+| **Country** | Country name, the name of the country where each customer resides.|  
+<br/>
+
+This is basic information about the dataset:  
+<details>
+  <summary>Show code</summary>
+
+  ```python
+  df.info()
+  ```
+  
+</details>
+<p align="center">
+  <img src="https://github.com/geraldsimanullang/Visualization-and-analysis-of-an-online-retail-invoices-dataset/assets/154493278/bad6219a-5f96-4294-9c7e-22a95de0bcec"
+</p>  
+<br/>
+
+**Dataset information summary:**  
+1. Dataset contains 541909 rows data with 8 columns
+2. **CustomerID** column has missing values
+3. 
+
 
 ## Data Preprocessing
 Before performing visualization and analysis, this dataset needs to be preprocessed first. The preprocessing processes include:  
